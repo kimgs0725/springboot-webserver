@@ -1,6 +1,10 @@
-{{>layout/header}}
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="layout/common :: html-head"></head>
+<body>
 
 <h1>게시글 등록</h1>
+
 <div class="col-md-12">
     <div class="col-md-4">
         <form>
@@ -22,4 +26,7 @@
     </div>
 </div>
 
-{{>layout/footer}}
+<div th:replace="layout/common :: footer"></div>
+
+</body>
+</html>
